@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobileView.css">
+    <title>My portfolio website</title>
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="" class="logo">Logo</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Hello World ! <br> I'm <span>Rukesh Basukala</span></h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
+                and scrambled it to make a type specimen book. It has survived not only five centuries, but also the 
+                leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
+                publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <a href="">Know More</a>
+        </div>
+        <ul class="sci">
+            <li><a href=""><img src="image/facebook.png" alt=""></a></li>
+            <li><a href=""><img src="image/linkedin.png" alt=""></a></li>
+            <li><a href=""><img src="image/twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Work</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggle()
+        {
+            var sec = document.getElementById('sec');
+            sec.classList.toggle('active')
+
+            var nav = document.getElementById('navigation');
+            nav.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
