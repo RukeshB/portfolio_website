@@ -1,0 +1,6 @@
+#hour,
+#min,
+#sec {
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
