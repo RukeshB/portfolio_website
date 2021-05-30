@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #333;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.laptop {
+  width: 85%;
+  margin-top: 10%;
+  margin-left: 10%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.laptop img {
+  width: 85%;
+}
+
+.text {
+  position: absolute;
+  width: 52.7%;
+  height: 66.3%;
+  /* background: #000; */
+  color: white;
+  top: 3.7%;
+  left: 17.5%;
+}
+.text h2 {
+  margin: auto;
+  margin-top: 10%;
+  animation: type 3s steps(16);
+  overflow: hidden;
+  white-space: nowrap;
+  width: 16ch;
+  border-right: 4px solid white;
+}
+
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+
+  100% {
+    width: 16ch;
+  }
+}
+
+.text h2::before {
+  border-right: 0px solid white;
+}
