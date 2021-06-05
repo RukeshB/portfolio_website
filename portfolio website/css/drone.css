@@ -1,0 +1,43 @@
+.flying_drone {
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.6s;
+}
+
+#right_fan,
+#left_fan {
+  animation: rotate 0.00001s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+#flying_drone_Vector_14,
+#flying_drone_Vector_15 {
+  animation: logo_fill 2s infinite linear;
+}
+
+@keyframes logo_fill {
+  0% {
+    fill: #ff0000;
+  }
+  33.33% {
+    fill: #009f4d;
+  }
+  66.66% {
+    fill: #0091ff;
+  }
+  100% {
+    fill: #ff0000;
+  }
+}

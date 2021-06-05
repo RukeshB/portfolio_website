@@ -1,0 +1,63 @@
+#hour,
+#min,
+#sec {
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+#left_leaf,
+#right_leaf {
+  animation: leaf 2s infinite linear;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes leaf {
+  0% {
+    transform: rotateZ(-5deg);
+  }
+  50% {
+    transform: rotateZ(5deg);
+  }
+  100% {
+    transform: rotateZ(-5deg);
+  }
+}
+
+.banner_image #Vector_17 {
+  animation: logo_stroke 2s infinite linear;
+}
+
+@keyframes logo_stroke {
+  0% {
+    stroke: #ff0000;
+  }
+  33.33% {
+    stroke: #009f4d;
+  }
+  66.66% {
+    stroke: #0091ff;
+  }
+  100% {
+    stroke: #ff0000;
+  }
+}
+
+.banner_image #Vector_18 {
+  animation: logo_fill 2s infinite linear;
+}
+
+@keyframes logo_fill {
+  0% {
+    fill: #ff0000;
+  }
+  33.33% {
+    fill: #009f4d;
+  }
+  66.66% {
+    fill: #0091ff;
+  }
+  100% {
+    fill: #ff0000;
+  }
+}
