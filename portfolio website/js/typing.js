@@ -2,7 +2,7 @@ var typing = document.querySelector(".typing");
 var count = 0;
 var index = 0;
 var letter = "";
-var text = " Developer";
+var text = "Developer";
 
 setTimeout(function(){setInterval(function(){
     letter = text.slice(0,++index);
