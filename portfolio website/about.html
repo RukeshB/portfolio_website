@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="con">
+        <header>
+            <a href="" class="logo"><img src="image/logo.png" alt=""></a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+    </div>
+    <div id="navigation">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Work</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+</body>
+<script type="text/javascript">
+    function toggle()
+    {
+        var sec = document.getElementById('con');
+        sec.classList.toggle('active')
+
+        var nav = document.getElementById('navigation');
+        nav.classList.toggle('active')
+    }
+</script>
+<script src="js/typing.js"></script>
+<script src="js/clock.js"></script>
+</html>
